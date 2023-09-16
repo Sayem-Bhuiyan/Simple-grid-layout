@@ -1,0 +1,43 @@
+.header-section,
+.nav-bar,
+.main-section,
+.sidebar,
+.advertise,
+.footer {
+    background-color: bisque;
+    border: 1px solid tomato;
+    border-radius: 5px;
+}
+
+
+/* creating the grid are */
+
+.header-section {
+    grid-area: header-section;
+}
+
+.nav-bar {
+    grid-area: nav-bar;
+}
+
+.main-section {
+    grid-area: main-section;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.advertise {
+    grid-area: advertise;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "header-section header-section   header-section  header-section" "nav-bar  main-section  main-section  sidebar" "nav-bar main-section  main-section  advertise" "footer footer  footer  footer";
+    gap: 20px;
+}
