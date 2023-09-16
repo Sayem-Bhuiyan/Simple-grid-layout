@@ -59,3 +59,33 @@
     grid-template-areas: "header-section header-section   header-section  header-section" "nav-bar  main-section  main-section  sidebar" "nav-bar main-section  main-section  advertise" "footer footer  footer  footer";
     gap: 20px;
 }
+
+
+/* responsive styles */
+
+
+/* media query for small devices */
+
+@media screen and (max-width: 576px) {
+    .container {
+        grid-template-areas: "header-section" "nav-bar" "main-secton" "advertise" "sidebar" "footer";
+    }
+}
+
+
+/* media query for medium device */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    /* .nav-bar>ul {
+        display: flex;
+        justify-content: space-evenly;
+    } */
+    .container {
+        grid-template-areas:
+        "header-section   header-section   header-section" 
+        "nav-bar          nav-bar          nav-bar"
+        "sidebar          main-section   main-section" 
+        "advertise        footer           footer"
+        ;
+    }
+}
